@@ -11,6 +11,11 @@ function GetController($ctrlName, $args = null){
             'app' => "Core",
             'class' => "IndexMember",
             'view' =>"indexmember"
+        ],
+        "report.display" => [
+            'app' => "Report",
+            'class' => "Display",
+            'view' => "display"
         ]
     ];
 
@@ -40,7 +45,13 @@ function GetBlock($blockName, $args = null){
         "comment.block" => [
             'app' => "Comment", 
             'class' => "CommentBlock",
-            'view' => 'block']
+            'view' => 'block'
+        ],
+        "report.block" => [
+            'app' => "Report",
+            'class' => "ReportBlock",
+            'view' => 'display'
+        ]
     ];
 
     if (!array_key_exists($blockName, $blocks)){
