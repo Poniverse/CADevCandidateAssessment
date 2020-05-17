@@ -19,3 +19,6 @@ Table Name: `users`
 - `user_id` - `int(10)` - User ID
 - `fullname` - `varchar(255)` - Full name of user
 - `username` - `varchar(255)` - User name of user
+
+# ANSWER
+SELECT comments.user_id, users.user_id FROM comments, users WHERE comments.user_id = users.user_id

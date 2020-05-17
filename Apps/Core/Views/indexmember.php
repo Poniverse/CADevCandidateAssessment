@@ -11,6 +11,7 @@ $html = <<<HTML
 <html>
 <head>
     <title>Canterlot Avenue</title>
+    <link rel="stylesheet" type="text/css" href="jStyle.css">
 </head>
 <body>
     <h1>Welcome to Canterlot Avenue</h1>
